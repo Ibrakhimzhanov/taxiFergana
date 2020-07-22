@@ -1,0 +1,59 @@
+.navbar 
+  box-shadow: 21px 0 70px rgba(0, 0, 0, 0.05)
+  &__logo 
+    display: flex
+    justify-content: center
+    align-items: center
+    // margin-bottom: 37px
+.menu
+  &-wrap
+    display: flex
+    flex-direction: row
+  &__nav 
+    position: fixed
+    left: 0
+    top: 0
+    height: 1200px
+    display: flex
+    flex-direction: column
+    width: 420px
+    padding: 30px 20px 140px 20px
+    box-shadow: 21px 0 70px rgba(0, 0, 0, 0.05)
+  &__link
+    width: 100%
+    display: block
+    border-radius: 10px
+    background-color: #f3f3f3
+    margin-bottom: 20px 
+    text-decoration: none
+    // max-height: 80px    
+    &-text
+      border-radius: 10px
+      padding: 27px  0 22px 30px
+      font-size: 22px
+      display: flex
+      color: $text-header
+      text-decoration: none
+      line-height: 30px
+      align-items: center
+      justify-content: space-between
+      transition: background-color 0.3s
+     
+      +reg
+      &:hover
+        background-color: $hover-effect 
+      &__food 
+        padding: 10px 0 10px 30px
+    img
+      margin-right: 30px
+      float: right
+    &-about 
+      +reg
+      color: $text-header
+      font-size: 22px
+      padding: 5px  0 22px 30px
+      background-color: #fff
+      transition: all 0.3s
+      &:hover 
+        color: $hover-effect
+        padding: 5px  0 22px 40px

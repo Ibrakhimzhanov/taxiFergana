@@ -1,0 +1,210 @@
+// Выбор города
+.order-city
+  margin-bottom: 6px
+  cursor: pointer
+  &-menu
+    display: block
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    z-index: 10
+    width: 201px
+    height: 300px
+    box-shadow: 0 0 15px 12px rgba(0, 0, 0, 0.11)
+    border-radius: 5px
+    background-color: rgba(#fff, 0.9 )
+    padding: 10px 0 10px 0
+    &__link
+      display: block
+      margin: 0 auto
+      width: 197px
+      padding: 10px 0 10px 20px
+      font-size: 18px
+      max-height: 40px
+      color: #191919
+      +mMed
+      &:hover 
+        box-shadow: 0 0 15px 12px rgba(0, 0, 0, 0.07)
+        border-radius: 5px
+        background-color: #ffffff
+  // Выбор языка
+.language__selection
+  display: flex
+  &-active
+    font-size: 22px 
+    +med 
+    width: 50px
+    height: 50px
+    padding: 13px 11px
+    margin-right: 5px
+    background: #000
+    border-radius: 5px
+    background-color: #ffffff
+  &-pick:hover
+    .language__selection-menu
+      display: flex
+  &-menu 
+    position: absolute
+    display: none
+    width: 50px
+    border-radius: 5px
+    background-color: #fff
+    flex-direction: column
+    transition: all 0.3s
+    &-link
+      margin-bottom: 5px
+      padding: 8px 20px 8px 10px
+      border-radius: 5px
+      display: block
+      line-height: 15px
+      border-radius: 5px
+      transition: all 0.2s
+      font-size: 18px
+      +med
+      &:hover     
+        box-shadow: 0 0 15px 12px rgba(0, 0, 0, 0.07)
+        background-color: #ffffff
+.btn 
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  left: 50%
+  transform: translateX(-50%)
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.05)
+  border-radius: 45px
+  background-color: #ffce2f
+  padding: 10px 10px 10px 36px
+  outline: none
+  border: none
+  transition: all 0.5s
+  &:hover
+    box-shadow: 0px 9px 19px -5px rgba(0,0,0,0.75);
+  &__text 
+    font-size: 24px 
+    +med
+    margin-right: 18px
+  &__icon
+    width: 70px
+    height: 70px
+    background-color: #ffffff
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+.taxi-btn
+  margin-top: 20%
+  margin-bottom: 63px
+.drivers
+  &-input
+    display: flex
+    input 
+      padding: 34px 100px 33px 43px
+      border-radius: 50px
+      outline: none
+      border: none
+    input[placeholder]
+      font-size: 24px 
+      +med
+      color: #000
+    button
+      cursor: pointer
+      position: relative
+      font-size: 24px
+      +med
+      color: #2e2e2e;
+      background: #ffce2e
+      border: none
+      outline: none
+      margin-left: -12%
+      border-radius: 50px
+      padding: 34px 103px 34px 41px
+      &::after
+        content: url('../icon/phone-send.png')
+        position: absolute
+        right: 10px
+        background-color: #fff
+        padding: 25px 26px
+        border-radius: 100px
+        top: 10px
+.menu-btn-wrap
+  display: none
+@media (max-width: 1449px)
+  .btn
+    padding: 10px 10px 10px 20px
+    &__text 
+      font-size: 18px
+    &__icon
+      width: 40px
+      height: 40px
+      img
+        width: 18px
+  .drivers
+      &-input-wrap
+        margin-right: 10px
+      &-input 
+        input 
+          padding: 10px 50px 10px 15px!important
+        input[placeholder]
+          font-size: 18px
+        button
+          font-size: 17px
+          padding: 20px 60px 20px 20px
+          &::after
+            top: 8px
+            padding: 13px 10px 10px 10px
+@media (max-width: 768px)
+  .drivers
+      &-input-wrap
+        margin-right: 5px
+      &-input 
+        input 
+          padding: 5px 20px 5px 10px!important
+        input[placeholder]
+          font-size: 14px
+        button
+          font-size: 14px
+          padding: 10px 40px 10px 10px
+          &::after
+            top: 5px
+            right: 5px
+            padding: 5px 3px 2px 3px
+
+@media (max-width: 615px)
+  .drivers
+      &-input-wrap
+        margin-right: 5px
+      &-input 
+        input 
+          padding: 15px 20px 15px 10px!important
+        input[placeholder]
+          font-size: 16px
+        button
+          font-size: 16px
+          padding: 10px 60px 10px 10px
+          &::after
+            top: 2px
+            right: 5px
+            padding: 13px 10px 10px 10px
+@media (max-width: 395px)
+   .drivers
+      &-input-wrap
+        margin-right: 5px
+      &-input 
+        display: block
+        input 
+          padding: 15px 40px 15px 20px!important
+        input[placeholder]
+          font-size: 16px
+        button
+          margin-left: 0%
+          margin-top: 3%
+          font-size: 16px
+          padding: 15px 90px 15px 20px
+          &::after
+            top: 4px
+            right: 5px
+            padding: 10px 8px 8px 6px
+      &-info 
+        margin-top: 15%

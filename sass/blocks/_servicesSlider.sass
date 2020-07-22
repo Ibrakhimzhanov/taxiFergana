@@ -1,0 +1,280 @@
+.services
+  background: #f3f3f3 url('../img/main-bg.webp') no-repeat top / cover
+  max-width: 1500px
+  margin-left: 420px
+  height: 750px
+  padding-bottom: 3px
+.slider
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 20px
+  text-align: center
+  outline: none
+  border: none
+  &-after
+    img
+      width: 100%
+  &-text
+    +reg
+    font-size: 60px
+    color: #fff
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.28)
+    span
+      +bold
+  &-wrap
+    position: relative
+    max-width: 770px
+    margin: 0 auto
+  &-arrows
+    position: absolute
+    display: flex
+    justify-content: space-between
+    top: 50%
+    width: 100%
+    transform: translateY(0%)
+  &__dots 
+    display: flex
+    li
+      display: block
+      width: 100% 
+      height: 3px
+      // background-color: yellow
+      button 
+        outline: none        
+.arrow
+  cursor: pointer
+  border: none
+  background-color: transparent
+  &:focus
+    outline: none
+  &-left
+    transform: translateX(-300%)
+  &-right
+    transform: translateX(200%)
+.slick-track
+  display: flex
+  // align-items: flex-start
+.slider__dots
+  margin-top: 30px
+  li 
+    color: #fff
+    font-size: 35px
+    +med
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.28)
+    button
+      color: #fff
+      cursor: pointer
+      outline: none
+      border: none
+      background-color: transparent
+  li:nth-child(1)
+    button
+      &::before
+        content: 'Старт'
+  li:nth-child(2)
+    button
+      &::before
+        content: 'Стандарт'
+  li:nth-child(3)
+    button
+      &::before
+       
+    button
+      &::after
+        content: 'Комфорт'
+li 
+  &.slick-active
+    button
+      padding-bottom: 5px
+      border-bottom: 4px solid $hover-effect
+.line-services
+  width: 540px
+  margin-bottom: 0
+.section-subtitle
+  font-size: 35px
+  +reg
+  color: rgba(#000, 0.7)
+  margin-bottom: 39px
+
+.tarif
+  &-wrap
+    // width: 1277px
+    // height: 600px
+    border-radius: 10px
+    background-color: #f3f3f3
+    margin-bottom: 60px
+    padding: 38px 54px 61px 64px
+  &-count 
+    display: flex
+    flex-direction: column
+  &-text
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &-min
+      font-size: 40px
+      +reg
+      color: $text-header
+    &-line
+      width: 2px
+      height: 140px
+      margin: 0 10px
+      background-color: rgba(#000000 ,0.3)
+    &-desc
+      font-size: 22px
+      +reg
+      color: rgba($text-header, 0.7)
+  &-info-wrap
+    margin-top: 38px
+    // width: 1169px
+    min-height: 323px
+    padding: 51px 67px 45px 66px 
+    border-radius: 10px
+    background-color: #ffffff
+    display: flex
+    justify-content: space-between
+    // align-items: center
+  &-list-right, &-list-left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &-list-left
+    text-align: right
+  &-info
+    &-right
+      display: flex
+      font-size: 27px
+      +reg
+      color: rgba($text-header, 0.7)
+    &-left
+      font-size: 27px
+      +med
+      color: $text-header
+@media (max-width: 1449px)
+  .container
+    max-width: 1170px
+  .services
+    height: 600px
+  .slider
+    &-after
+      img
+        width: 90%
+        margin: 0 auto
+    &-text
+      font-size: 40px
+  .slider__dots
+    margin-top: -10px
+  .arrow
+    cursor: pointer
+    border: none
+    background-color: transparent
+    &:focus
+      outline: none
+    &-left
+      transform: translateX(-80%)
+    &-right
+      transform: translateX(80%)  
+  .section-subtitle
+    font-size: 30px
+  .services-bold 
+    margin-bottom: 0px!important
+  .tarif
+    &-wrap
+      padding: 20px!important
+    &-text
+      &-min
+        font-size: 20px!important
+      &-line
+        width: 2px
+        height: 100px
+        margin: 0 10px 
+      &-desc 
+        font-size: 18px!important
+    &-info
+      &-wrap
+        padding: 40px 20px!important
+      &-right
+        font-size: 18px!important
+      &-left
+        font-size: 18px!important
+
+
+
+
+@media (max-width: 991px)
+  .container 
+    max-width: 750px
+  .services
+    height: 500px
+  .slider
+    &-text
+      font-size: 30px
+    &-arrows
+      display: none
+  .slider__dots
+    li
+      font-size: 25px
+  .section-header
+    &-text
+      font-size: 35px!important
+      &__bold 
+        font-size: 31px!important
+  .section-subtitle
+    font-size: 28px!important
+  .tarif
+    &-wrap
+      padding: 10px!important
+    &-text
+      &-min
+        font-size: 18px!important
+      &-line
+        width: 2px
+        height: 100px
+        margin: 0 10px 
+      &-desc 
+        font-size: 14px!important
+    &-info
+      &-wrap
+        padding: 30px 10px!important
+      &-right
+        font-size: 14px!important
+      &-left
+        font-size: 14px!important
+@media (max-width: 768px)
+  .container
+    max-width: 100%
+  .services
+    height: 400px
+  .slider
+    &-text
+      font-size: 20px
+    &-arrows
+      display: none
+  .slider__dots
+    li
+      font-size: 18px
+  li
+    &.slick-active
+      button
+        border-bottom: 2px solid $hover-effect
+
+@media (max-width: 615px)
+  .section-header
+    &-text
+      font-size: 28px!important
+      &__bold 
+        font-size: 26px!important
+  .section-subtitle
+    font-size: 22px!important
+  .services
+    height: 450px
+  .slider
+    &-after
+      img
+        width: 95%
+        margin: auto
+@media (max-width: 395px)
+  .services
+    height: 370px

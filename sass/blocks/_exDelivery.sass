@@ -1,0 +1,39 @@
+.exDelivery
+  background: #f3f3f3 url('../img/delivery-bg.webp') no-repeat top / cover
+  max-height: 1140px
+  margin-bottom: 4px
+  .ex 
+    &-content
+      flex-direction: column
+      align-items: flex-start
+    &-title
+      margin-top: 10%
+    &__line 
+      width: 303px
+      top: 50px
+      left: -5px
+    &-subtitle 
+      display: block
+      max-width: 790px
+      line-height: 1.2
+    &__desc
+      margin-top: 51px
+      &-min
+        display: block
+        margin-top: 49px
+        margin-bottom: 5%
+    &-app 
+      display: block
+      flex-direction: row
+      margin-bottom: 5%
+
+@media (max-width: 1449px)
+   .ex
+    &-app
+      margin-top: 0!important
+      &__img 
+          width: 50%!important
+@media (max-width: 615px)
+  .ex 
+    &-subtitle 
+      font-size: 16px!important

@@ -1,0 +1,87 @@
+.section-header
+  &-text 
+    margin-top: 3%
+    text-shadow: 1px -5px 7px rgba(0, 0, 0, 0.1)
+    color: $text-header
+    +reg
+    font-size: 60px
+    &__bold 
+      +bold
+      font-size: 56px
+  &__line 
+    z-index: -1
+    top: -23px
+    position: relative
+    display: block
+    margin-bottom: 80px
+    width: 620px
+    height: 15px
+    background-color: #ffce2e
+.taxi 
+  margin-left: 420px
+  max-width: 1500px
+  &-order 
+    display: flex
+    justify-content: space-between
+    &__img-wrap
+      display: flex
+      align-items: center
+      padding-left: 0px
+      position: relative
+      justify-content: center
+      
+    &__step
+      display: flex
+      width: 30%
+      justify-content: center
+      cursor: pointer
+      &:hover
+        .taxi-order__box 
+          background-color: $hover-effect
+    &__count
+      position: absolute
+      z-index: 333
+      left: -15%
+      width: 79px
+      height: 79px
+      box-shadow: 2px 10px 21px rgba(255, 206, 46, 0.6)
+      background-color: $hover-effect
+      color: #ffffff
+      padding: 20px 20px
+      +bold
+      font-size: 35px
+      border-radius: 50%
+    &__img
+      width: 238px 
+      z-index: 222
+    &__wrap
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      position: relative
+    &__box
+      position: absolute
+      display: flex
+      align-items: flex-end
+      justify-content: center
+      bottom: -30%
+      width: 100%
+      height: 60%
+      margin: 0 auto
+      box-shadow: 2px -10px 29px rgba(48, 48, 48, 0.1)
+      border-radius: 15px
+      border: 2px solid rgba(0, 0, 0, 0.11)
+      background-color: #ffffff
+      padding-bottom: 26px
+      transition: all 0.3s
+    &__title 
+      text-align: center
+      color: $text-header
+      font-size: 28px
+      +bold
+      &-sub
+        +reg
+        color: $text-header
+        display: block

@@ -1,0 +1,81 @@
+.hero 
+  background: #f3f3f3 url('../img/hero/order-bg.webp') no-repeat top / cover
+  max-width: 1500px
+  margin-left: 420px
+  max-height: 750px
+  padding-bottom: 3px
+  &-content 
+    // background: #000
+    padding-right: 60px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 100px
+  &-title 
+    margin: 141px 0 32px 0
+    max-width: 620px
+    font-size: 60px
+    +bold
+    color: #fff
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.28)
+    position: relative
+    z-index: 999
+    &__line
+      position: absolute
+      top: 47px 
+      z-index: -1
+      display: block
+      width: 620px
+      height: 15px
+      background-color: $hover-effect
+  &-subtitle
+    +mReg
+    font-size: 30px
+    color: #fff
+    max-width: 540px
+    line-height: 50px
+    &__desc
+      +mBold
+      font-size: 50px
+      display: block
+  &-app
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__img 
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+.head 
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-top: 53px
+.order  
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 710px
+    &-contact 
+      width: 100%
+      align-items: center
+      justify-content: space-between
+      display: flex
+      flex-direction: row
+    &-taxi 
+      +mReg
+      font-size: 35px
+      color: #ffffff
+    &-mobile 
+      font-size: 50px
+      +lig
+      color: #ffffff
+      span
+        font-size: 60px
+        +bold
+    &-city 
+      color: #ffffff
+      font-size: 35px
+      +mBold
+      img
+        vertical-align: middle
